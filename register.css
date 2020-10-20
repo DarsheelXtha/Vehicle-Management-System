@@ -1,0 +1,121 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: cursive;
+}
+.main{
+	background-color:black;
+	height: 63px; 
+	position:relative;
+	z-index:10;
+}
+#sidebar{
+	position: fixed;
+	left: -220px;
+	transition: all 500ms linear;
+}
+#sidebar.active{
+	left: 0px;
+}
+#sidebar .toggle-btn{
+	position: absolute;
+	left: 230px;
+	top: 20px;
+}
+#sidebar .toggle-btn span{
+	display: block;
+	width:30px;
+	height: 5px;
+	margin: 3px 0px;
+	background: white;
+	float: left;
+}
+#sidebar ul{
+	list-style: none;
+	margin: 0;
+}
+#sidebar ul li{
+	padding: 15px;
+	position: relative;
+	width:150px;
+	background-color: black; 
+	border-top: 1px solid #BDC3C7;
+}
+#sidebar ul ul{
+	transition: all 0.3s;
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	left:80%;
+	top:-2%;
+}
+#sidebar ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+#sidebar ul li:hover > ul{
+	opacity: 1;
+	visibility: visible;
+}
+span{
+	margin-right: 15px;
+}
+#nav ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#nav ul li{
+	float: left;
+	width: 200px;
+	height: 70px;
+	text-align: center;
+	line-height: 60px;
+	margin-left: 5px; 
+}
+#nav ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+#nav ul li a:hover{
+	color: red;
+}
+#nav ul li ul li{
+	display: none;
+}
+#nav ul li:hover ul li{
+	display: block;
+	background-color: black;
+}
+#register{
+	text-align: center;
+	margin: 50px 400px;
+}
+#registration{
+	width: 100%;
+	background-color: black;
+	opacity: 0.8;
+	padding: 50px 0px;
+	outline: 0px;
+}
+#butt{
+	width: 250px;
+	padding: 10px;
+	border-radius: 5px;
+	outline: 0px;
+	background-color: #0c6996;
+	border:solid #01010c;
+	color: aliceblue;
+}
+#but{
+	width: 250px;
+	border-radius: 5px;
+	padding: 10px;
+	outline: 0px;
+}
+h1{
+	font-family: arial;
+	font-weight: bold;
+	color: red;
+}

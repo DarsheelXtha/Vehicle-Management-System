@@ -1,0 +1,31 @@
+body{
+margin: 0;
+padding: 0;
+background-color: royalblue;
+background-size: 100% 700px;
+background-position: center;
+font-family:sans-serif;
+}
+.simple{
+text-align: center;
+margin: 50px 400px;
+}
+#registration{
+	width: 100%;
+	background-color: #051019;
+	opacity: .8;
+	padding: 50px 0px;
+
+}
+#button{
+	padding: 10px;
+	border-radius: 5px;
+	width:250px;
+}
+#butt{
+	width:250px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: green;
+	border: 2px solid #01010c;
+}

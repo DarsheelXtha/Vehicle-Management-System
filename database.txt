@@ -1,0 +1,35 @@
+use vehicle_reg;
+select * from user;
+create table request(
+req_id int(9) unsigned auto_increment primary key,
+s_station int(9),
+d_station int(9),
+req_time timestamp
+);
+
+select * from user;
+select * from request;
+
+drop table request;
+
+
+create table vehicle(
+v_id integer primary key,
+v_driver varchar(30));
+
+
+select * from vehicle;
+drop table vehicle;
+
+
+
+create table passenger(
+p_id int(9),
+v_seat int(9),
+v_id int,
+foreign key(v_id) references vehicle(v_id));
+
+select * from passenger;
+drop table passenger;
+
+insert into passenger values (1,1,1);

@@ -1,0 +1,134 @@
+<html>
+<link rel="stylesheet" href="serve.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/Javascript">
+	function toggleSidebar(){
+	document.getElementById("sidebar").classList.toggle('active');
+}
+	</script>
+<body>
+	<div class="main">
+	<div id="sidebar" onclick="toggleSidebar()">
+		<div class="toggle-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+<ul>
+	<li><a href="server.html"><span class="fa fa-home"></span>Home</a></li>
+	<li><a><span class="fa fa-question-circle"></span>About Us</a>
+		<ul>
+			<li><a href="about con.html">Contributors</a></li>
+			<li><a>Service</a></li>
+		</ul>
+	</li>
+	<li><a><span class="fa fa-user-circle"></span>Me</a>
+		<ul><li><a>Info</a></li>
+			<li><a href="change.html">Update account</a></li>
+			<li><a href="Remove.html">Remove account</a></li>
+			<li><a href="signup.html">Add new account</a></li>
+		</ul>
+	</li>	
+	<li><a><span class="fa fa-question"></span>About Vehicle</a>
+		<ul>
+			<li><a href="regi.html">Registration</a></li>
+			<li><a href="mainte.html">Maintenance</a></li>
+			<li><a href="fare.html">Fare</a></li>
+		</ul>
+	</li>
+	<li><a href="register.html"><span class="fa fa-address-book"></span>Booking</a></li>
+	<li><a><span class="fa fa-bus"></span>Stations</a>
+		<ul>
+		<li><a href="Station 1.html">Gongabu</a></li>
+			<li><a href="Station 2.html">Banasthali</a></li>
+			<li><a href="Station 3.html">Lazimpat</a></li>
+			<li><a href="Station 4.html">Maharajganj</a></li>
+		 </ul>
+	</li>
+	<li><a><span class="fa fa-phone"></span>Contact Us</a>
+		<ul>
+			<li><a>Driver</a></li>
+			<li><a>Adminstrators</a></li>
+		</ul>
+	</li>
+	<li><a><span class="fa fa-comments "></span>Feedback</a></li>
+	<li><a href="logout.php"><span class="fa fa-sign-out"></span>Logout</a></li>
+	</ul>
+</div>
+<div id="nav">	
+<ul>
+	<li><a href="server.html">Home</a></li>
+	<li><a><font color="red">About</font></a>
+		<ul>
+			<li><a href="about con.html">Contributors</a></li>
+			<li><a href="user.php">Users</a></li>
+		</ul>
+	</li>
+	<li><a>Vehicle</a>
+		<ul>
+			<li><a href="regi.html">Registration</a></li>
+			<li><a href="mainte.html">Maintenance</a></li>
+			<li><a href="fare.html">Fare</a></li>
+		</ul>
+	</li>
+	<li><a href="register.html">Booking</a></li>
+	<li><a>Station</a>
+		<ul>
+			<li><a href="Station 1.html">Gongabu</a></li>
+			<li><a href="Station 2.html">Banasthali</a></li>
+			<li><a href="Station 3.html">Lazimpat</a></li>
+			<li><a href="Station 4.html">Maharajganj</a></li>
+		</ul>
+	</li>
+	<li><a>Contact Us</a>
+	<ul>
+	<li><a href="driver.php">Driver</a></li>
+			<li><a href="administrators.php">Adminstrators</a></li>
+	</ul>
+	</li>
+</ul>
+</div>
+</div>
+
+	<br>
+			<div class="container">
+				<h2>Namaste!!</h2>
+				<p>We are a group of five students of BIM 15<sup>th</sup> batch from NCCS college.
+				We are not doing this project only for the sake of assignment requirement of BIM 4<sup>th</sup> sem, instead we are doing this for the betterment and improvement of transportation system in Nepal. In the current context, due to bus owners's interest in earning fast money, driver and driving members who carried passengers without caring for capacity, existence of syndicate system in transportation system, compulsion of passengers to travel even by taking risk and wait for hours to get to their destination encouraged us to come up with this project. Instead of depending upon government to solve this issue, we want to give our own effort to it.</p>
+		</div>
+			<center><h2>How does our website works?</h2></center>
+
+			<div class="container">
+			<h3>Step 1</h3>
+			<p> A passenger opens the website.The passenger enters their  source and destination into the From and To box under Booking panel and also chooses the seat no. if available and then taps Request.</p>
+			</div>
+			<div class="container">
+				<h3>Step 2</h3>
+				<p>The driver nearest to the requested location gets the notification and he/she can either accept or reject the request which depends upon the seat capacity or vehicle condition like low fuel or under repair and maintenance.</p>
+			</div>
+			<div class="container">
+				<h3>Step 3</h3>
+				<p>The driver arrives at the location and verify the passenger</p>
+			</div>
+			<div class="container">
+				<h3>Step 4</h3>
+				<p>After the passenger is verified, the driver takes the passenger towards their destination.</p>
+			</div>
+			<div class="container">
+				<h3>Step 5</h3>
+				<p> Before taking off from the bus, the passenger pays money to the driver on the basis of distance between stations. The passenger can also leave feedback and ratings.</p>
+			</div>
+		</section>
+		<form method="POST" action="comment.php">
+		<section id="comment">
+			<div class="comment">
+				<h2>Comment:</h2>
+				<textarea rows="10" cols="70" placeholder="Enter your comment here" name="comment"></textarea>
+				<br>
+				<input type="submit" value="send">
+			</form>
+			</div>	
+
+		</section>
+		</body>
+</html>
